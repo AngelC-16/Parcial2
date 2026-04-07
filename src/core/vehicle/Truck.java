@@ -18,6 +18,19 @@ public class Truck extends Vehicle {
         super(cargoCapacity, shipppings);
         this.licensePlate = licensePlate;
     }
+
+    public String getLicensePlate() {
+        return licensePlate;
+    }
+
+    public float getCargoCapacity() {
+        return cargoCapacity;
+    }
+
+    public ArrayList<Shipping> getShipppings() {
+        return shipppings;
+    }
+    
     
     
 }
