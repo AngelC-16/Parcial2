@@ -38,8 +38,28 @@ public class CargoLink {
     public ArrayList<Vehicle> getVehicles() {
         return vehicles;
     }
+
+    public boolean addClient(Client client){
+        if(!this.client.contains(client)){
+            this.client.add(client);
+            return true;
+        }
+        return false;
+    }
     
+    public boolean addCenter(Center center){
+        if(!this.center.contains(center)){
+            this.center.add(center);
+            return true;
+        }
+        return false;
+    }
     
-    
-    
+    public boolean addCenter(Vehicle vehicle){
+        if(!this.vehicle.contains(vehicle)){
+            this.vehicle.add(vehicle);
+            return true;
+        }
+        return false;
+    }
 }

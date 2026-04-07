@@ -2,7 +2,16 @@ package main;
 
 
 import java.time.LocalDate;
-
+import core.cargolink;
+import core.vehicle.Plane;
+import core.vehicle.Ship;
+import core.vehicle.Truck;
+import core.vehicle.Vehicle;
+import core.client.Client;
+import core.cargolink.CargoLink;
+import core.cargolink.logistics.LogisticsCenter;
+import core.cargolink.logistics.Shipping.Shipping;
+import java.util.ArrayList;
 public class MainParcial2038 {
     
     public static void main(String[] args) {
