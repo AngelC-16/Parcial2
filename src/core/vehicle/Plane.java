@@ -14,8 +14,8 @@ import java.util.ArrayList;
 public class Plane extends Vehicle  {
     private String code;
 
-    public Plane(String code, float cargoCapacity, ArrayList<Shipping> shipppings) {
-        super(cargoCapacity, shipppings);
+    public Plane(double cargoCapacity, String code) {
+        super(cargoCapacity);
         this.code = code;
     }
 
@@ -23,7 +23,7 @@ public class Plane extends Vehicle  {
         return code;
     }
 
-    public float getCargoCapacity() {
+    public double getCargoCapacity() {
         return cargoCapacity;
     }
 

@@ -12,15 +12,15 @@ import java.util.ArrayList;
  * @author acarrillog
  */
 public abstract class Vehicle {
-  protected float cargoCapacity;
+  protected double cargoCapacity;
   protected ArrayList<Shipping> shipppings;
 
-    public Vehicle(float cargoCapacity, ArrayList<Shipping> shipppings) {
+    public Vehicle(double cargoCapacity) {
         this.cargoCapacity = cargoCapacity;
         this.shipppings = new ArrayList<>();
     }
 
-    public float getCargoCapacity() {
+    public double getCargoCapacity() {
         return cargoCapacity;
     }
 

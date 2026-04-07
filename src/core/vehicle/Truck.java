@@ -14,16 +14,17 @@ import java.util.ArrayList;
 public class Truck extends Vehicle {
     private String licensePlate;
 
-    public Truck(String licensePlate, float cargoCapacity, ArrayList<Shipping> shipppings) {
-        super(cargoCapacity, shipppings);
+    public Truck(double cargoCapacity,String licensePlate) {
+        super(cargoCapacity);
         this.licensePlate = licensePlate;
     }
+
 
     public String getLicensePlate() {
         return licensePlate;
     }
 
-    public float getCargoCapacity() {
+    public double getCargoCapacity() {
         return cargoCapacity;
     }
 

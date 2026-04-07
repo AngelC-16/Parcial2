@@ -17,8 +17,8 @@ import java.util.ArrayList;
 
 public class CargoLink {
     private ArrayList<Client> client;
-    private ArrayList<Center> center;
     private ArrayList<Vehicle> vehicle;
+    private ArrayList<LogisticsCenter> center;
     
     public CargoLink(){
         this.client = new ArrayList<>();
@@ -30,7 +30,7 @@ public class CargoLink {
         return client;
     }
 
-    public ArrayList<Center> getCenter() {
+    public ArrayList<LogisticsCenter> getCenter() {
         return center;
     }
 
@@ -46,9 +46,11 @@ public class CargoLink {
         return false;
     }
     
-    public boolean addCenter(Center center){
-        if(!this.center.contains(center)){
-            this.center.add(center);
+    
+    
+    public boolean addLogisticsCenter(LogisticsCenter logisticsCenter){
+        if(!this.center.contains(logisticsCenter)){
+            this.center.add(logisticsCenter);
             return true;
         }
         return false;
