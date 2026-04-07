@@ -18,8 +18,7 @@ import java.util.ArrayList;
 public class CargoLink {
     private ArrayList<Client> client;
     private ArrayList<Center> center;
-    private ArrayList<Vehicle> vehicles;
-    private final ArrayList<Object> vehicle;
+    private ArrayList<Vehicle> vehicle;
     
     public CargoLink(){
         this.client = new ArrayList<>();
@@ -36,7 +35,7 @@ public class CargoLink {
     }
 
     public ArrayList<Vehicle> getVehicles() {
-        return vehicles;
+        return vehicle;
     }
 
     public boolean addClient(Client client){
