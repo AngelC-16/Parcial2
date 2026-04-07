@@ -4,10 +4,32 @@
  */
 package core.vehicle;
 
+import core.cargolink.logistics.Shipping.Shipping;
+import java.util.ArrayList;
+
 /**
  *
  * @author acarrillog
  */
-public class Ship {
+public class Ship extends Vehicle {
+    private String name;
+
+    public Ship(String name, float cargoCapacity, ArrayList<Shipping> shipppings) {
+        super(cargoCapacity, shipppings);
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public float getCargoCapacity() {
+        return cargoCapacity;
+    }
+
+    public ArrayList<Shipping> getShipppings() {
+        return shipppings;
+    }
+    
     
 }

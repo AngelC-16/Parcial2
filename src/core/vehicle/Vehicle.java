@@ -17,7 +17,7 @@ public abstract class Vehicle {
 
     public Vehicle(float cargoCapacity, ArrayList<Shipping> shipppings) {
         this.cargoCapacity = cargoCapacity;
-        this.shipppings = shipppings;
+        this.shipppings = new ArrayList<>();
     }
 
     public float getCargoCapacity() {
