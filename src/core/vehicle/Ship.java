@@ -14,16 +14,18 @@ import java.util.ArrayList;
 public class Ship extends Vehicle {
     private String name;
 
-    public Ship(String name, float cargoCapacity, ArrayList<Shipping> shipppings) {
-        super(cargoCapacity, shipppings);
+    public Ship(double cargoCapacity,String name) {
+        super(cargoCapacity);
         this.name = name;
     }
+
+    
 
     public String getName() {
         return name;
     }
 
-    public float getCargoCapacity() {
+    public double getCargoCapacity() {
         return cargoCapacity;
     }
 
