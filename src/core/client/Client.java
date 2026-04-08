@@ -42,7 +42,7 @@ public class Client {
         return email;
     }
 
-    public ArrayList<Shipping> getShippings() {
-        return shippings;
+    public Shipping getShipping(int id) {
+        return this.shippings.get(id);
     }
 }

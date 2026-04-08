@@ -26,8 +26,8 @@ public class CargoLink {
         this.vehicle = new ArrayList<>();
     }    
     
-    public ArrayList<Client> getClients() {
-        return client;
+    public Client getClient(int id) {
+        return this.client.get(id);
     }
 
     public ArrayList<LogisticsCenter> getCenter() {
@@ -45,7 +45,13 @@ public class CargoLink {
         }
         return false;
     }
-    
+    public boolean addVehicle (Vehicle cehicle){
+        if (!this.vehicle.contains(vehicle)){
+            this.vehicle.add(cehicle);
+            return true;
+        }
+        return false;
+    }
     
     
     public boolean addLogisticsCenter(LogisticsCenter logisticsCenter){
