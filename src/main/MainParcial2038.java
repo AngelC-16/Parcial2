@@ -13,6 +13,7 @@ import core.cargolink.CargoLink;
 import core.cargolink.logistics.LogisticsCenter;
 import core.cargolink.logistics.Shipping.Shipping;
 import java.util.ArrayList;
+
 public class MainParcial2038 {
     
     public static void main(String[] args) {
